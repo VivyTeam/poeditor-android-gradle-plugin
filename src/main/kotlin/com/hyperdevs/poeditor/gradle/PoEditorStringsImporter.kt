@@ -96,6 +96,7 @@ object PoEditorStringsImporter {
                 // Download translation File to in-memory string
                 logger.lifecycle("Downloading file from URL: $translationFileUrl")
                 val translationFile = okHttpClient.downloadUrlToString(translationFileUrl)
+                println(translationFile)
 
                 // Extract final files from downloaded translation XML
                 val postProcessedXmlDocumentMap =

@@ -42,6 +42,7 @@ typealias ConfigName = String
  */
 class PoEditorPlugin : Plugin<Project> {
     override fun apply(project: Project) {
+        println("logging test")
         val mainConfigName = "main"
         val mainResourceDirectory = getResourceDirectory(project, mainConfigName)
 
